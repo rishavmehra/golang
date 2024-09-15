@@ -29,6 +29,8 @@ func main() {
 		exit("failed to parse the Provided CSV file")
 	}
 	// fmt.Println(lines) // without slices
+
+	// converted in to slices
 	problems := parseLines(lines)
 	timer := time.NewTimer(time.Duration(*timeLimit) * time.Second)
 	// fmt.Println(problems) // with slices
